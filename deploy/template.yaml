@@ -89,7 +89,7 @@ objects:
       spec:
         containers:
         - name: bot
-          image: ${BOT_IMAGE}:${IMAGE_DIGEST}
+          image: ${REGISTRY_IMG}@${IMAGE_DIGEST}
           securityContext:
             runAsNonRoot: true
             allowPrivilegeEscalation: false
